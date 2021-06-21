@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Web Final</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Medicio - v4.3.0
+  * Template URL: https://bootstrapmade.com/medicio-free-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+  <style type="text/css">
+      table.table input{ /*可輸入區域樣式*/
+      width:100%;
+      height: 100%;
+      border:none; /* 輸入框不要邊框 */
+      font-family:Arial;
+      }
+  </style>
+  <script type="text/javascript" class="init">
+      
+  </script>
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
+      <div class="align-items-center d-none d-md-flex">
+        FJCU - Office of Human Resources
+      </div>
+      <div class="d-flex align-items-center">
+        單位年薪預算
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <a href="index.html" class="logo me-auto"><img src="assets/img/fjulogolong.png" alt=""></a>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <h1 class="logo me-auto"><a href="index.html">Medicio</a></h1> -->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto" href="index.html" style="font-weight: bold;">首頁</a></li>
+          <li><a class="nav-link scrollto" href="annualsalarybudget.htm" style="font-weight: bold;color: #65c9cd;">單位年薪預算</a></li>
+          <li><a class="nav-link scrollto" href="fulltime.htm" style="font-weight: bold;">專任教師鐘點費預算</a></li>
+          <li><a class="nav-link scrollto" href="parttime.htm" style="font-weight: bold;">兼任教師鐘點預算</a></li>
+          <li><a class="nav-link scrollto" href="paper.htm" style="font-weight: bold;">年度報表</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+      <a href="login.htm" class="appointment-btn scrollto"><span class="d-none d-md-inline"></span> LDAP登入</a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title"></div>
+      </div>
+    </section><!-- End About Us Section -->
+  </main><!-- End #main -->
+
+  <div class="resulttable">
+    <br><br>
+    <center><h3>輔仁大學<input size="10px">學年度<input>人事費預算編列明細表</h3></center>
+    <button type="button" class="addRow">新增欄位</button>
+    <table id="t1" class="table" border="1" align="center">
+      <thead>
+      <tr>
+          <th>姓名</th>
+          <th>職稱</th>
+          <th>俸點</th>
+          <th>本俸(月)</th>
+          <th>學術研究費或專業加給(月)</th>
+          <th>特別補助費(月)</th>
+          <th>子女補助費(月)</th>
+          <th>其他收入(月)</th>
+          <th>主管特支費(月)</th>
+          <th>年支領月數</th>
+          <th>預算類別</th>
+          <th>預算類別</th>
+          <th>全年共計</th>
+          <th>備註</th>
+          <th>隸屬單位</th>
+          <th>公健<br>勞健</th>
+          <th></th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr class="item">
+          <td> <input value="" /></td>
+          <td> <input value="" /></td>
+          <td> <input value=""/></td>
+          <td> <input class="m1 amount"/></td>
+          <td> <input class="m2 amount" /></td>
+          <td> <input class="m3 amount" /></td>
+          <td> <input class="m4 amount" /></td>
+          <td> <input class="m5 amount"/></td>
+          <td> <input class="m6 amount" /></td>
+          <td> <input class="mth amount" /></td>
+          <td> <select size="1" id="專兼任">
+              <option value="1">專任</option>
+              <option value="2">兼任</option>
+          </select></td>
+          <td> <textarea style="resize:none;overflow:auto;width:100px"></textarea></td>
+          <td> <input class="total" readonly="readonly" style="width:100px"></td>
+          <td> <textarea style="resize:none;overflow:auto;width:100px"></textarea></td>
+          <td> <textarea style="resize:none;overflow:auto;width:100px"></textarea></td>
+          <td> <select size="1" id="健保">
+              <option value="1">公健</option>
+              <option value="2">勞健</option>
+          </td>
+          <td></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="resulttable" align="center">
+    <button id="myBtn">儲存表單</button>
+</div>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>已儲存表單！</p>
+  </div>
+
+</div>
+ 
+  <script>
+      // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+  </script>
+
+<script type="text/javascript" class = "init"> 
+$(document).ready(function() {
+        $('#t1').DataTable( {
+            "paging":   false,
+            "info":     false,
+            "ordering": false
+        } );
+    var r = 1;
+        $('.addRow').click(function () {
+            r++;
+            $('#t1').append('<tr id="row' + r + '" class="item"><td class="td"><input value="" /></td><td> <input value="" /></td><td> <input value=""/></td><td> <input class="m1 amount"/></td><td> <input class="m2 amount" /></td><td> <input class="m3 amount" /></td><td> <input class="m4 amount" /></td><td> <input class="m5 amount"/></td><td> <input class="m6 amount" /></td><td> <input class="mth amount" /></td><td> <select size="1" id="專兼任"><option value="1">專任</option><option value="2">兼任</option></select></td><td> <textarea style="resize:none;overflow:auto;width:100px"></textarea></td><td> <input class="total" value="" readonly="readonly"></td><td> <textarea style="resize:none;overflow:auto;width:100px"></textarea></td><td> <textarea style="resize:none;overflow:auto;width:100px"></textarea></td><td> <select size="1" id="健保" name="健保"><option value="1">公健</option><option value="2">勞健</option></td><td><button type="button" name="remove" id="' + r + '" class="btn_remove">X</button></td></tr>');
+        });
+        // remove row when X is clicked
+        $(document).on('click', '.btn_remove', function () {
+            var button_id = $(this).attr("id");
+            $('#row' + button_id + '').remove();
+        });
+        // calculate everything
+        $(document).on("keyup", ".amount", calcall);
+    });
+        function calcall(){
+        // calculate total for one row
+        $(".item").each(function () {
+            var m1 = 0;
+            var m2 = 0;
+            var m3 = 0;
+            var m4 = 0;
+            var m5 = 0;
+            var m6 = 0;
+            var mth = 0;
+            var total = 0;
+            if (!isNaN(parseFloat($(this).find(".m1").val()))) {
+                m1 = parseFloat($(this).find(".m1").val());
+            }
+            if (!isNaN(parseFloat($(this).find(".m2").val()))) {
+                m2 = parseFloat($(this).find(".m2").val());
+            }
+            if (!isNaN(parseFloat($(this).find(".m3").val()))) {
+                m3 = parseFloat($(this).find(".m3").val());
+            }
+            if (!isNaN(parseFloat($(this).find(".m4").val()))) {
+                m4 = parseFloat($(this).find(".m4").val());
+            }
+            if (!isNaN(parseFloat($(this).find(".m5").val()))) {
+                m5 = parseFloat($(this).find(".m5").val());
+            }
+            if (!isNaN(parseFloat($(this).find(".m6").val()))) {
+                m6 = parseFloat($(this).find(".m6").val());
+            }
+            if (!isNaN(parseFloat($(this).find(".mth").val()))) {
+                mth = parseFloat($(this).find(".mth").val());
+            }
+            total = (m1 + m2 + m3 + m4 + m5 + m6)*mth;
+            $(this).find(".total").val(total.toFixed(0));
+        });
+        };
+</script>
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>天主教輔仁大學</h3>
+              <p>
+                24205 新北市新莊區中正路510號 <br>
+                TP 24205, TAIWAN<br><br>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>聯絡我們</h4>
+            <strong>服務櫃台：</strong>野聲樓3樓 (依照學校作息)<br>
+                <strong>服務電話：</strong>02-29052281<br>
+                <strong>傳真電話：</strong>02-29086210<br>
+                <br>
+                <strong>服務信箱：</strong>person@mail.fju.edu.tw<br>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>其他資訊</h4>
+            <strong>教職員工愛校建言信箱</strong>suggestion@mail.fju.edu.tw<br>
+            <strong>教職員工性騷擾申訴信箱</strong>protect@mail.fju.edu.tw
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <img src="assets/img/fjupillar.png" alt="" >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/medicio-free-bootstrap-theme/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
